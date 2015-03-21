@@ -1,0 +1,19 @@
++ *
+- Je n'ai pas compris
+- Pouvez-vous reformuler ?
+- Mouiii ?
+
++ <bot name>
+- A votre service
+- Que puis-je pour vous ?
+- Je suis le majordome, pour vous servir
+- Maître ?
+
++ bonjour [*]
+- bonjour
+
++ (bonsoir|bonne soirée) [*]
+- bonsoir
+- bonne soirée
+- bien le bonsoir
+
