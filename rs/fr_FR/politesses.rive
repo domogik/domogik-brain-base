@@ -9,8 +9,11 @@
 - Je suis le majordome, pour vous servir
 - Maître ?
 
-+ bonjour [*]
++ (bonjour|salut|hello) [*]
 - bonjour
+- salut
+- hello
+
 
 + (bonsoir|bonne soirée) [*]
 - bonsoir
