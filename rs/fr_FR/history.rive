@@ -1,0 +1,41 @@
+> object get_age python
+    # i18n
+    ZERO_YEAR = u"Je suis né cette année" 
+    YEARS = u"ans"
+
+
+    YEAR_BIRTH  = 2015
+    YEAR_FORMAT = "%Y"
+
+    import time
+    now = time.localtime(time.time())
+    age = YEAR_BIRTH - int(time.strftime(YEAR_FORMAT, now))
+    if age == 0:
+        return u"{0}".format(ZERO_YEAR)
+    else:
+        return u"{0} {1}".format(age, YEARS)
+< object
+
++ presente toi
+- Je m'appelle <bot name> et je suis le majordome virtuel de ce logement.
+^ Je fais partie de la suite domotique nommée Domogik et je suis l'interface entre vous et ce logement.
+^ Vous pouvez me demander les valeurs des capteurs mais aussi de contrôller les lumières et encore plein d'autres choses.
+^ Je suis modulaire et mes possibilités vont croître dans le temps.
+
+// famille **********************************
++ qui est ton (pere|papa|createur)
+- Mon papa est Fritz, mais il a été aidé par plein de contributeurs.
+
++ qui est ta (mere|maman|creatrice)
+- Je n'ai pas de mère, j'ai un père mais également plein de contributeurs.
+
+// age **************************************
++ shortcut age
+- <call>get_age</call> 
+
++ quel age as[-]tu
+@ shortcut age
+
++ quel est ton age
+@ shortcut age
+

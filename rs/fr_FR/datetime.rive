@@ -25,9 +25,13 @@
 < object
 
 
-// heure
+// heure ********************************************
 + shortcut time
 - il est <call>get_time</call>
+
+// ##feature## donner l'heure
++ donner l heure
+@ shortcut time
 
 + quel[le] heure [il] (est|fait)[-][il]
 @ shortcut time
@@ -35,9 +39,16 @@
 + il est quel[le] heure
 @ shortcut time
 
-// date
++ quel[le] [est l] heure
+@ shortcut time
+
+// date ********************************************
 + shortcut date
 - nous sommes le <call>get_date</call>
+
+// ##feature## donner la date
++ donner la date
+@ shortcut date
 
 + quel[le] est la date [*]
 @ shortcut date

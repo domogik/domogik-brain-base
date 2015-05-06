@@ -11,8 +11,8 @@
         "author_email": "fritz.smh at gmail.com", 
         "tags": ["butler"], 
         "dependencies": [], 
-        "description": "Butler core brain", 
-        "domogik_min_version": "0.4.0", 
+        "description": "Butler core brain. This package includes all the basic brain features : greetings, learning, date, time, math, ...", 
+        "domogik_min_version": "0.4.1", 
         "name": "core", 
         "type": "brain", 
         "version": "1.0"

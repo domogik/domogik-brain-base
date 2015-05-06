@@ -1,0 +1,19 @@
+> topic chut
+    + *
+    - .
+
+    + <bot name>
+    - Je suis en mode silencieux. Dites tu peux reparler pour me sortir de mon silence.
+
+    + tu peux (reparler| sortir du silence)
+    - merci {topic=random}
+
+
+< topic
+
+// ##feature## ne plus parler
++ ne plus parler
+@ chut
+
++ chut
+- Ok. {topic=chut}

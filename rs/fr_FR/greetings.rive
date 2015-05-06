@@ -1,0 +1,66 @@
+// réponse par défaut ***********************************
++ *{weight=1}
+- Je n'ai pas compris
+- Pouvez-vous reformuler ?
+- Mouiii ?
+
+// préfixes *********************************************
+// les commands suivantes implémentent des préfixes. Tout ce qui est après le préfixe sera traité comme si il n'était pas là.
+// Exemple : "ok ping" et "ping" sont des commandes équivalents
+
+// le classique :)
++ <bot name> *
+- {@<star>}
+
+// a cause de "ok google", les gens pourraient avoir pris l'habitude de commencer une demande par 'ok'
++ ok *
+- {@<star>}
+
+// suite à une réponse du butler, on peut être tenté de remercier et demander dans la foulée un complément
++ merci *
+- {@<star>}
+
+// tout ce qui est lié au nom ***************************
++ <bot name>{weight=1}
+- A votre service
+- Que puis-je pour vous ?
+- Je suis le majordome, pour vous servir
+- Maître ?
+
++ qui es tu
+- je m'appelle <bot name>
+
++ quel est ton [petit] (prenom|nom)
+@ qui es tu
+
+// beucoup de fautes sur appeller donc...
++ comment (vous vous|tu t) ap[p]el[l]e[s][z]
+@ qui es tu
+
+// politesses *******************************************
++ (bonjour|salut|hello|hey|coucou) [*]{weight=1}
+- bonjour
+- salut
+- hello
+
++ (bonsoir|bonne soirée|tchao) [*]
+- bonsoir
+- bonne soirée
+- bien le bonsoir
+
++ comment (ca|tu) va
+- bien, merci
+- je vais bien
+- tout roule
+- ça roule
+
++ bon (we|weekend|week end) [*]
+- merci, à vous aussi
+
+// réponses à certains trucs classiques ******************
++ merci
+- de rien
+
++ ok
+- .
+
