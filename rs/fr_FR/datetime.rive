@@ -2,12 +2,16 @@
     #i18n
     DISPLAY_FORMAT = "%-H heure %M "
     LOCALE = "fr_FR.UTF-8"
+    ERROR_LOCALE = u"La locale configurén'est pas bonne ou installésur le systè : {0}".format(LOCALE)
 
 
     import locale
     import time
     now = time.localtime(time.time())
-    locale.setlocale(locale.LC_ALL, LOCALE)
+    try:
+        locale.setlocale(locale.LC_ALL, LOCALE)
+    except:
+        return ERROR_LOCALE
     return time.strftime(DISPLAY_FORMAT, now)
 < object
 
@@ -15,12 +19,16 @@
     #i18n
     DISPLAY_FORMAT = "%A %d %B"
     LOCALE = "fr_FR.UTF-8"
+    ERROR_LOCALE = u"La locale configurén'est pas bonne ou installésur le systè : {0}".format(LOCALE)
 
 
     import locale
     import time
     now = time.localtime(time.time())
-    locale.setlocale(locale.LC_ALL, LOCALE)
+    try:
+        locale.setlocale(locale.LC_ALL, LOCALE)
+    except:
+        return ERROR_LOCALE
     return time.strftime(DISPLAY_FORMAT, now)
 < object
 
