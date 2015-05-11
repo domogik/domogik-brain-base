@@ -2,7 +2,7 @@
     #i18n
     DISPLAY_FORMAT = "%-H heure %M "
     LOCALE = "fr_FR.UTF-8"
-    ERROR_LOCALE = u"La locale configurén'est pas bonne ou installésur le systè : {0}".format(LOCALE)
+    ERROR_LOCALE = u"La locale configurée n'est pas bonne ou installée sur le système : {0}".format(LOCALE)
 
 
     import locale
@@ -19,7 +19,7 @@
     #i18n
     DISPLAY_FORMAT = "%A %d %B"
     LOCALE = "fr_FR.UTF-8"
-    ERROR_LOCALE = u"La locale configurén'est pas bonne ou installésur le systè : {0}".format(LOCALE)
+    ERROR_LOCALE = u"La locale configurée n'est pas bonne ou installée sur le système : {0}".format(LOCALE)
 
 
     import locale
