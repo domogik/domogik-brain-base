@@ -1,0 +1,9 @@
+> object get_butler_features python
+    # i18n
+    I_KNOW = u"I know the following : "
+    return u"{0} {1}".format(I_KNOW, rs.the_features)
+< object
+
+
++ what do you know about
+- <call>get_butler_features</call>

@@ -1,0 +1,16 @@
+> topic silence
+    + *
+    - .
+
+    + <bot name>
+    - I'm in silence mode. Say `you can speak again` and i will stop being silent.
+
+    + you can start speaking again
+    - thanks {topic=random}
+
+
+< topic
+
+// ##feature## ne plus parler
++ silence
+- Ok. {topic=silence}
