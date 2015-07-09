@@ -1,0 +1,22 @@
+.. _index:
+
+==========
+Brain core
+==========
+
+Purpose
+=======
+
+The *core* brain is, with the *datatype* brain the main part of Domogik butler. This brain package will allow you to interact with the butler for some common tasks.
+
+Dependencies
+============
+
+There is no dependency.
+
+Brain configuration
+===================
+
+There is no configuration option for this plugin.
+
+

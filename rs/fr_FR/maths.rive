@@ -6,24 +6,19 @@
 ! sub * = fois
 
 > object calc python
+    from domogik_packages.brain_core.lib.maths import calc
     # i18n
+    ERROR_BAD_FORMULA = u"Vous avez donné une formule que je ne sais pas traiter"
     OPERANDS = {u"plus" : "+",
                 u"moins" : "-",
                 u"fois" : "*",
                 u"divisepar" : "/"}
     
-    # processing
-    formula = ""
-    for a_arg in args:
-        if a_arg in OPERANDS:
-            formula += " {0} ".format(OPERANDS[a_arg])
-        else:
-            formula += a_arg
-    
-    return "{0} = {1}".format(formula, eval(formula))
+    return calc(args, OPERANDS, ERROR_BAD_FORMULA)
+    """
 < object
 
-// ##feature## calculer paramèe
+// ##feature## calculer paramètre
 + calculer *
 - <call>calc <star></call>
 
