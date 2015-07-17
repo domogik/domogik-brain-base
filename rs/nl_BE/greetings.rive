@@ -1,0 +1,29 @@
++ *{weight=1}
+- I did not understand.
+- What are you asking for?
+
++ <bot name> *
+- {@<star>}
+
++ ok *
+- {@<star>}
+
++ bedankt *
+- {@<star>}
+
++ <bot name>{weight=1}
+- Tot uw dienst
+
++ wie bent u
+- Mijn naam is <bot name>
+
++ (hey|hallo) [*]{weight=1}
+- hey
+- hallo
+
++ bedankt
+- geen probleem
+
++ ok
+- .
+

@@ -1,0 +1,62 @@
+> object learn_trigger_response python
+    from domogik.butler.brain import learn
+
+    # i18n
+    OK = u"Its noted."
+    PARAM = u"parametre"
+
+    the_args = u' '.join(args).split("__SEP__")
+    the_trigger = the_args[0]
+    the_trigger = the_trigger.replace(PARAM, "*");
+    the_response = the_args[1]
+    # replace each parameter by <starX>
+    tab_response = the_response.split(PARAM)
+    if len(tab_response) > 1:
+        the_response = u""
+        for idx_r in range(0, len(tab_response) - 1):
+            the_response += u"{0} <star{1}>".format(tab_response[idx_r], idx_r + 1)
+        the_response = u"{0} {1}".format(the_response, tab_response[-1])
+            
+    rs_code = u"+ {0}\n- {1}\n\n".format(the_trigger, the_response)
+    
+    learn(rs_code)
+    rs.reload_butler()
+    return OK
+< object
+
+> object learn_trigger_shortcut python
+    from domogik.butler.brain import learn
+
+    # i18n
+    OK = u"Its noted."
+    PARAM = u"parametre"
+
+    the_args = u' '.join(args).split("__SEP__")
+    the_trigger = the_args[0]
+    the_trigger = the_trigger.replace(PARAM, "*");
+    the_response = the_args[1]
+    # replace each parameter by <starX>
+    tab_response = the_response.split(PARAM)
+    if len(tab_response) > 1:
+        the_response = u""
+        for idx_r in range(0, len(tab_response) - 1):
+            the_response += u"{0} <star{1}>".format(tab_response[idx_r], idx_r + 1)
+        the_response = u"{0} {1}".format(the_response, tab_response[-1])
+
+    # remove duplicate whitespace unless shortcuts may not work
+    the_response = ' '.join(the_response.split())
+    rs_code = u"+ {0}\n@ {1}\n\n".format(the_trigger, the_response)
+    learn(rs_code)
+    rs.reload_butler()
+    return OK
+< object
+
+// trigger => réponse
++ wanneer ik * zeg moet je antwoorden met *
+- <call>learn_trigger_response <star1>__SEP__<star2></call>
+
+// trigger => raccourci
++ wanneer ik * zeg bedoel ik *
+- <call>learn_trigger_shortcut <star1>__SEP__<star2></call>
+
+

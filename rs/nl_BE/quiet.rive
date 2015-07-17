@@ -1,0 +1,16 @@
+> topic silence
+    + *
+    - .
+
+    + <bot name>
+    - Ik sta in stil mode, zeg `je kunt terug praten` en ik begin terug te werken
+
+    + je kunt etrug praten
+    - bedankt {topic=random}
+
+
+< topic
+
+// ##feature## ne plus parler
++ stil
+- Ok. {topic=silence}

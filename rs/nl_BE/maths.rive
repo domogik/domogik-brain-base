@@ -1,0 +1,31 @@
+// i18n
+! sub + = plus
+! sub - = min
+! sub / = delen door
+! sub divisé par = delen door
+! sub * = maal
+
+> object calc python
+    # i18n
+    OPERANDS = {u"plus" : "+",
+                u"less" : "-",
+                u"time" : "*",
+                u"divide by" : "/"}
+    
+    # processing
+    formula = ""
+    for a_arg in args:
+        if a_arg in OPERANDS:
+            formula += " {0} ".format(OPERANDS[a_arg])
+        else:
+            formula += a_arg
+    
+    return "{0} = {1}".format(formula, eval(formula))
+< object
+
+// ##feature## calculer paramèe
++ bereken *
+- <call>calc <star></call>
+
++ (bereken|hoeveel is|wat is het resultaat van) *
+@ calculer <star2>

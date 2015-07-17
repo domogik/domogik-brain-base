@@ -1,0 +1,42 @@
+> object get_time python
+    #i18n
+    DISPLAY_FORMAT = "%-H:%M "
+    LOCALE = "en_US.UTF-8"
+
+
+    import locale
+    import time
+    now = time.localtime(time.time())
+    locale.setlocale(locale.LC_ALL, LOCALE)
+    return time.strftime(DISPLAY_FORMAT, now)
+< object
+
+> object get_date python
+    #i18n
+    DISPLAY_FORMAT = "%A %d %B"
+    LOCALE = "en_US.UTF-8"
+
+
+    import locale
+    import time
+    now = time.localtime(time.time())
+    locale.setlocale(locale.LC_ALL, LOCALE)
+    return time.strftime(DISPLAY_FORMAT, now)
+< object
+
+
+// heure ********************************************
++ shortcut time
+- het is <call>get_time</call>
+
+// ##feature## give the time
++ hoe laat is het
+@ shortcut time
+
+// date ********************************************
++ shortcut date
+- Today it is <call>get_date</call>
+
+// ##feature## give the date
++ wat is de datum
+@ shortcut date
