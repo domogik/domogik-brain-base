@@ -48,11 +48,14 @@
 - bonne soirée
 - bien le bonsoir
 
-+ comment (ca|tu) va
++ comment (ca|tu) va[s]
 - bien, merci
 - je vais bien
 - tout roule
 - ça roule
+
++ comment va[s][-]tu
+@ comment ca va
 
 + bon (we|weekend|week end) [*]
 - merci, à vous aussi

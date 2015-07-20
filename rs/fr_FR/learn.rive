@@ -30,6 +30,8 @@
     return OK
 < object
 
+// ##feature## apprendre
+
 // trigger => réponse
 + quand je dis * je veux que tu repondes *
 - <call>learn_trigger_response <star1>__SEP__<star2></call>

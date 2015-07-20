@@ -16,6 +16,8 @@
         return u"{0} {1}".format(age, YEARS)
 < object
 
+// ##feature## parler de moi
+
 + presente toi
 - Je m'appelle <bot name> et je suis le majordome virtuel de ce logement.
 ^ Je fais partie de la suite domotique nommée Domogik et je suis l'interface entre vous et ce logement.

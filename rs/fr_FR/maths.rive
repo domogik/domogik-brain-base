@@ -15,10 +15,9 @@
                 u"divisepar" : "/"}
     
     return calc(args, OPERANDS, ERROR_BAD_FORMULA)
-    """
 < object
 
-// ##feature## calculer paramètre
+// ##feature## calculer 
 + calculer *
 - <call>calc <star></call>
 
