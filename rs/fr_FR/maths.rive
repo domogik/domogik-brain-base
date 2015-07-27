@@ -21,5 +21,5 @@
 + calculer *
 - <call>calc <star></call>
 
-+ (calcule|combien fait|donne le resultat de) *
++ (calcule|calcul|combien fait|combien font|donne le resultat de) *
 @ calculer <star2>
