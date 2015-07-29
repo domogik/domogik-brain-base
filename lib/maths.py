@@ -20,6 +20,7 @@ def calc(args, operands, bad_formula_msg):
     
     try:
         result = eval(formula)
+        voice_formula = formula.replace("*", "x")
     except:
         return u"{0}".format(bad_formula_msg)
-    return "{0} = {1}".format(formula, result)
+    return "{0} = {1}".format(voice_formula, result)
