@@ -4,6 +4,7 @@
 ! sub / = divisepar
 ! sub divisé par = divisepar
 ! sub * = fois
+! sub x = fois
 
 > object calc python
     from domogik_packages.brain_core.lib.maths import calc

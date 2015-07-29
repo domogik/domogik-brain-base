@@ -5,5 +5,11 @@
 < object
 
 
-+ que (peux|sais)[-]tu faire
++ shortcut features
 - <call>get_butler_features</call>
+
++ que (peux|sais)[-]tu faire
+@ shortcut features
+
++ de quoi es[-]tu capable
+@ shortcut features

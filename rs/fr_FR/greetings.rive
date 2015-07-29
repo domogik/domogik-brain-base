@@ -2,7 +2,6 @@
 + *{weight=1}
 - Je n'ai pas compris
 - Pouvez-vous reformuler ?
-- Mouiii ?
 
 // préfixes *********************************************
 // les commands suivantes implémentent des préfixes. Tout ce qui est après le préfixe sera traité comme si il n'était pas là.
@@ -30,6 +29,9 @@
 + qui es tu
 - je m'appelle <bot name>
 
++ qui es-tu
+@ qui es tu
+
 + quel est ton [petit] (prenom|nom)
 @ qui es tu
 
@@ -47,6 +49,9 @@
 - bonsoir
 - bonne soirée
 - bien le bonsoir
+
++ allo [*]
+- ici <bot name> au bout du fil
 
 + comment (ca|tu) va[s]
 - bien, merci
