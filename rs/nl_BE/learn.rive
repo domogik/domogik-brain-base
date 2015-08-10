@@ -1,6 +1,6 @@
 > object learn_trigger_response python
     from domogik.butler.brain import learn
-    from domogik_packages.brain_core.lib.learn import process_args
+    from domogik_packages.brain_base.lib.learn import process_args
 
     # i18n
     OK = u"wordt opgemerkt"
@@ -16,7 +16,7 @@
 
 > object learn_trigger_shortcut python
     from domogik.butler.brain import learn
-    from domogik_packages.brain_core.lib.learn import process_args
+    from domogik_packages.brain_base.lib.learn import process_args
 
     # i18n
     OK = u"wordt opgemerkt"

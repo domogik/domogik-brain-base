@@ -7,7 +7,7 @@
 ! sub x = maal
 
 > object calc python
-    from domogik_packages.brain_core.lib.maths import calc
+    from domogik_packages.brain_base.lib.maths import calc
     # i18n
     ERROR_BAD_FORMULA = u"U een formule die ik niet weet traktatie gaf"
     OPERANDS = {u"plus" : "+",
