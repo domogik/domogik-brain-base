@@ -1,0 +1,5 @@
+{
+    "plugin-weather" : {
+        "DT_Temp" : "current_temperature"
+    }
+}

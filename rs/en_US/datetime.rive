@@ -2,12 +2,16 @@
     #i18n
     DISPLAY_FORMAT = "%-H:%M "
     LOCALE = "en_US.UTF-8"
+    ERROR_LOCALE = u"The local is not good or installed on the system : {0}".format(LOCALE)
 
 
     import locale
     import time
     now = time.localtime(time.time())
-    locale.setlocale(locale.LC_ALL, LOCALE)
+    try:
+        locale.setlocale(locale.LC_ALL, LOCALE)
+    except:
+        return ERROR_LOCALE
     return time.strftime(DISPLAY_FORMAT, now)
 < object
 
@@ -15,12 +19,16 @@
     #i18n
     DISPLAY_FORMAT = "%A %d %B"
     LOCALE = "en_US.UTF-8"
+    ERROR_LOCALE = u"The local is not good or installed on the system : {0}".format(LOCALE)
 
 
     import locale
     import time
     now = time.localtime(time.time())
-    locale.setlocale(locale.LC_ALL, LOCALE)
+    try:
+        locale.setlocale(locale.LC_ALL, LOCALE)
+    except:
+        return ERROR_LOCALE
     return time.strftime(DISPLAY_FORMAT, now)
 < object
 
@@ -30,6 +38,9 @@
 - it is <call>get_time</call>
 
 // ##feature## give the time
++ what time is it
+@ shortcut time
+
 + give me the time
 @ shortcut time
 

@@ -1,0 +1,15 @@
++ shortcut bool command * dev * val *
+- <call>trigger_bool_command <star1>__SEP__<star2>__SEP__<star3></call>
+
++ (allume|allumer) [la] [le] * 
+@shortcut bool command DT_Switch dev <star2> val 1
+
++ (eteind[s]|eteindre) [la] [le] * 
+@shortcut bool command DT_Switch dev <star2> val 0
+
++ active *
+@shortcut bool command DT_Enable dev <star> val 1
+
++ desactive *
+@shortcut bool command DT_Enable dev <star> val 0
+

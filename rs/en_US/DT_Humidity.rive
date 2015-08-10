@@ -1,0 +1,13 @@
+// raccourci
++ shortcut humidity *
+- The humidity at <star> is <call>get_sensor_value DT_Humidity pourcents <star></call>
+
+// phrases
++ what is the humidity (at|of) *
+@shortcut humidity <star2>
+
++ humidity *
+@shortcut humidity <star>
+
+
+

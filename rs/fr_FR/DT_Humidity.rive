@@ -1,0 +1,17 @@
+// test pour vérifier le chargement correct du fichier
++ chargement dt humidity
+- ok
+
+// raccourci
++ shortcut humidity *
+- L'humidité de <star> est de <call>get_sensor_value DT_Humidity pourcents <star></call>
+
+// phrases
++ [quelle est|donne moi] l humidite [a|de|du|dans] *
+@shortcut humidity <star>
+
++ humidity *
+@shortcut humidity <star>
+
+
+

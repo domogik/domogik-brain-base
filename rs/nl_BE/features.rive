@@ -1,6 +1,6 @@
 > object get_butler_features python
     # i18n
-    I_KNOW = u"I know the following : "
+    I_KNOW = u"ik kan : "
     return u"{0} {1}".format(I_KNOW, rs.the_features)
 < object
 

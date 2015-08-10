@@ -1,7 +1,7 @@
 > object get_age python
     # i18n
-    ZERO_YEAR = u"I was born this year" 
-    YEARS = u"year"
+    ZERO_YEAR = u"Ik was dit jaar geboren"
+    YEARS = u"jaar"
 
 
     YEAR_BIRTH  = 2015

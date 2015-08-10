@@ -1,31 +1,26 @@
 // i18n
 ! sub + = plus
-! sub - = moins
-! sub / = divisepar
-! sub divisé par = divisepar
-! sub * = fois
+! sub - = minus
+! sub / = dividedby
+! sub divided by = dividedby
+! sub * = multiplying
+! sub x = multiplying
 
 > object calc python
+    from domogik_packages.brain_core.lib.maths import calc
     # i18n
+    ERROR_BAD_FORMULA = u"You gave me a formula I am not able to process"
     OPERANDS = {u"plus" : "+",
-                u"less" : "-",
-                u"time" : "*",
-                u"divide by" : "/"}
+                u"minus" : "-",
+                u"multiplying" : "*",
+                u"dividedby" : "/"}
     
-    # processing
-    formula = ""
-    for a_arg in args:
-        if a_arg in OPERANDS:
-            formula += " {0} ".format(OPERANDS[a_arg])
-        else:
-            formula += a_arg
-    
-    return "{0} = {1}".format(formula, eval(formula))
+    return calc(args, OPERANDS, ERROR_BAD_FORMULA)
 < object
 
-// ##feature## calculer paramèe
-+ calculer *
+// ##feature## calculate
++ calculate *
 - <call>calc <star></call>
 
-+ (calcule|how much is|whats the result of) *
++ (calculate|how much is|whats the result of) *
 @ calculer <star2>

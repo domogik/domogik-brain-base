@@ -1,9 +1,10 @@
-// répétition des entrées *************************
-// commenté car pas pratique, à décommenter selon les envies...
+// repeat the input *************************
+// commented because not user friendly. To uncomment if you wish
 // + <input1>
 // - Vous l'avez déjà dit
 
 
-// pas de perroquet dans la maison ****************
-+ <reply1>
-- Don't repeat me
+// no repeat in the house
+// commented because not user friendly. To uncomment if you wish
+// + <reply1>
+// - Don't repeat me

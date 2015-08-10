@@ -1,29 +1,25 @@
 // i18n
 ! sub + = plus
 ! sub - = min
-! sub / = delen door
-! sub divisé par = delen door
+! sub / = delendoor
+! sub delen door = delendoor
 ! sub * = maal
+! sub x = maal
 
 > object calc python
+    from domogik_packages.brain_core.lib.maths import calc
     # i18n
+    ERROR_BAD_FORMULA = u"U een formule die ik niet weet traktatie gaf"
     OPERANDS = {u"plus" : "+",
-                u"less" : "-",
-                u"time" : "*",
-                u"divide by" : "/"}
+                u"min" : "-",
+                u"maal" : "*",
+                u"delendoor" : "/"}
+
+    return calc(args, OPERANDS, ERROR_BAD_FORMULA)
     
-    # processing
-    formula = ""
-    for a_arg in args:
-        if a_arg in OPERANDS:
-            formula += " {0} ".format(OPERANDS[a_arg])
-        else:
-            formula += a_arg
-    
-    return "{0} = {1}".format(formula, eval(formula))
 < object
 
-// ##feature## calculer paramèe
+// ##feature## berekenen
 + bereken *
 - <call>calc <star></call>
 

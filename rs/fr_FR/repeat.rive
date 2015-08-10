@@ -5,5 +5,6 @@
 
 
 // pas de perroquet dans la maison ****************
-+ <reply1>
-- Ne répétez pas ce que je dis
+// commenté car pas pratique, à décommenter selon les envies...
+//+ <reply1>
+//- Ne répétez pas ce que je dis

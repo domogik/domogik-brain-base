@@ -1,0 +1,20 @@
+// test pour vérifier le chargement correct du fichier
++ chargement dt temp
+- ok
+
+// raccourci
++ shortcut temperature *
+- La température de <star> est <call>get_sensor_value DT_Temp degrés <star></call> 
+
+// phrases
++ combien fait il [a|de|du|dans] *
+@shortcut temperature <star>
+
++ [quelle est|donne moi] la temperature [a|de|du|dans] *
+@shortcut temperature <star>
+
++ temp *
+@shortcut temperature <star>
+
+
+
