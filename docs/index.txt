@@ -6,6 +6,6 @@ Table Of Content
 
 .. toctree::
 
-    /core
+    /base
     /dev
     /changelog

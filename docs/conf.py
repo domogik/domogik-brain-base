@@ -17,7 +17,7 @@ source_suffix = '.txt'
 master_doc = 'index'
 
 # General information about the project.
-project = u'domogik-brain-core'
+project = u'domogik-brain-base'
 copyright = u'2015, Fritz'
 
 # The version info for the project you're documenting, acts as replacement for
