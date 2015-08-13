@@ -17,7 +17,7 @@
 
 > object get_date python
     #i18n
-    DISPLAY_FORMAT = "%A %d %B"
+    DISPLAY_FORMAT = u"%A %d %B"
     LOCALE = "fr_FR.UTF-8"
     ERROR_LOCALE = u"La locale configurée n'est pas bonne ou installée sur le système : {0}".format(LOCALE)
 
@@ -29,7 +29,11 @@
         locale.setlocale(locale.LC_ALL, LOCALE)
     except:
         return ERROR_LOCALE
-    return time.strftime(DISPLAY_FORMAT, now)
+    the_date = time.strftime(DISPLAY_FORMAT, now)
+    # TODO : replace this dirty tricky thing by something better...."
+    the_date = the_date.replace("û", "u")
+    the_date = the_date.replace("é", "e")
+    return u"{0}".format(the_date)
 < object
 
 
