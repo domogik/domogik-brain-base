@@ -1,7 +1,12 @@
+> object star python
+    from domogik.butler.brain import process_star
+    process_star("{0}\n".format(rs.raw_query))
+< object
+
 // réponse par défaut ***********************************
 + *{weight=1}
-- Je n'ai pas compris
-- Pouvez-vous reformuler ?
+- Je n'ai pas compris<call>star</call>
+- Pouvez-vous reformuler ?<call>star</call>
 
 // préfixes *********************************************
 // les commands suivantes implémentent des préfixes. Tout ce qui est après le préfixe sera traité comme si il n'était pas là.

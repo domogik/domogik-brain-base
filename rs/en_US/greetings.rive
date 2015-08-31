@@ -1,6 +1,11 @@
+> object star python
+    from domogik.butler.brain import process_star
+    process_star("{0}\n".format(rs.raw_query))
+< object
+
 + *{weight=1}
-- I did not understand.
-- What are you asking for?
+- I did not understand.<call>star</call>
+- What are you asking for?<call>star</call>
 
 + <bot name> *
 - {@<star>}

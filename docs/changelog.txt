@@ -6,6 +6,7 @@ Changelog
 ===
 
 * (fr_FR) Fix date charset issue
+* (all lang) For '*', call the brain process_star() function to allow loggin of not understood queries
 
 1.0
 ===
