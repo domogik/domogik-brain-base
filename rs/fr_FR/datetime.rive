@@ -38,6 +38,11 @@
 
 
 // heure ********************************************
+/* ##suggest## 
+? .* heure(?:.*)?
+@ quelle heure est-il
+*/
+
 + shortcut time
 - il est <call>get_time</call>
 
@@ -55,6 +60,11 @@
 @ shortcut time
 
 // date ********************************************
+/* ##suggest## 
+? .* date(?:.*)?
+@ quel jour sommes nous
+*/
+
 + shortcut date
 - nous sommes le <call>get_date</call>
 

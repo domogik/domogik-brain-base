@@ -1,11 +1,3 @@
-> object star python
-    from domogik.butler.brain import process_star
-    process_star("{0}\n".format(rs.raw_query))
-< object
-
-+ *{weight=1}
-- Ik begrijp het niet<call>star</call>
-- wat bedoel je ?<call>star</call>
 
 + <bot name> *
 - {@<star>}

@@ -1,0 +1,26 @@
+> object star python
+    from domogik.butler.brain import process_star
+    # i18n
+    RESPONSES = [u"I don't understand",
+                 u"What do you mean ?"]
+    SUGGEST_INTRODUCTION = u"Does this mean :"
+    return process_star(RESPONSES, SUGGEST_INTRODUCTION, rs)
+< object
+
+> object learn_from_suggestion python
+    from domogik.butler.brain import learn_from_suggestion
+    learn_from_suggestion(rs)
+< object
+
+// default response and suggestions
++ *{weight=1}
+- <call>star</call>
+
++ yes
+% does this mean *
+- OK.<call>learn_from_suggestion</call>
+
++ no
+% does this mean *
+- Nevermind
+

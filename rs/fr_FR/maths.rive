@@ -19,6 +19,11 @@
 < object
 
 // ##feature## calculer 
+/* ##suggest## 
+? .* calcul.* ([0-9][0-9\+]+[0-9])
+@ calculer <star1>
+*/
+
 + calculer *
 - <call>calc <star></call>
 

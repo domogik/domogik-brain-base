@@ -6,7 +6,9 @@ Changelog
 ===
 
 * (fr_FR) Fix date charset issue
-* (all lang) For '*', call the brain process_star() function to allow loggin of not understood queries
+* (all lang) For '*', call the brain process_star() function to allow :
+  * analyse input query to do some suggestions 
+  * logging of not understood queries
 
 1.0
 ===

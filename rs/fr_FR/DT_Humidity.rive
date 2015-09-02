@@ -1,17 +1,18 @@
-// test pour vérifier le chargement correct du fichier
-+ chargement dt humidity
-- ok
+
+/* ##suggest## 
+? .* humidite.* ((?:a |de la |de l |de |du |dans le |dans la |dans l |dans |d ).*)
+@ quelle est l humidite <star1>
+*/
+
 
 // raccourci
 + shortcut humidity *
-- L'humidité de <star> est de <call>get_sensor_value DT_Humidity pourcents <star></call>
+- L'humidité est <call>get_sensor_value DT_Humidity pourcents <star></call>
 
 // phrases
-+ [quelle est|donne moi] l humidite [a |de |du |dans ] *
-@shortcut humidity <star>
++ (quelle est|donne moi) l humidite [a |de la |de l |de |du |dans le |dans la |dans l |dans |d ] *
+@shortcut humidity <star2>
 
-+ humidity *
-@shortcut humidity <star>
 
 
 
