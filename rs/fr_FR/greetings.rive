@@ -19,7 +19,7 @@
 - Maître ?
 
 + qui es tu
-- je m'appelle <bot name>
+- Je m'appelle <bot name>
 
 + qui es-tu
 @ qui es tu
@@ -27,38 +27,41 @@
 + quel est ton [petit] (prenom|nom)
 @ qui es tu
 
-// beucoup de fautes sur appeller donc...
+// beaucoup de fautes sur appeller donc...
 + comment (vous vous|tu t) ap[p]el[l]e[s][z]
 @ qui es tu
 
 // politesses *******************************************
 /* ##suggest## 
-? .* ((?:bonjour|salut|hello|hey|coucou)).*
+? .* (?:bonjour|salut|hello|hey|coucou).*
 @ bonjour
 */
 
 + (bonjour|salut|hello|hey|coucou) [*]{weight=1}
-- bonjour
-- salut
-- hello
+- Bonjour
+- Salut
+- Hello
 
 /* ##suggest## 
-? .* ((?:bonsoir|bonne soirée|tchao)).*
+? .* (?:bonsoir|bonne soirée|tchao).*
 @ bonsoir
 */
 
 + (bonsoir|bonne soirée|tchao) [*]
-- bonsoir
-- bonne soirée
-- bien le bonsoir
+- Bonsoir
+- Bonne soirée
+- Bien le bonsoir
 
 + allo [*]
-- ici <bot name> au bout du fil
+- Ici <bot name> au bout du fil
+
++ allo [allo] (mr|monsieur) l ordinateur
+- Tu me prends pour Dorothée ?
 
 + comment (ca|tu) va[s]
-- bien, merci
-- je vais bien
-- tout roule
+- Bien, merci
+- Je vais bien
+- Tout roule
 - ça roule
 
 + comment va[s][-]tu
@@ -68,11 +71,16 @@
 @ comment ca va
 
 + bon (we|weekend|week end) [*]
-- merci, à vous aussi
+- Merci, à vous aussi
 
 // réponses à certains trucs classiques ******************
+/* ##suggest## 
+? .* (?:merci|remercie).*
+@ merci
+*/
+
 + merci
-- de rien
+- De rien.
 
 + ok
 - .

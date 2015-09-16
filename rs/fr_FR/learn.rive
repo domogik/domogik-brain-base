@@ -3,7 +3,7 @@
     from domogik_packages.brain_base.lib.learn import process_args
 
     # i18n
-    OK = u"C'est noté."
+    OK = u"OK"
     PARAM = u"parametre"
 
     the_trigger, the_response = process_args(args, PARAM)
@@ -19,7 +19,7 @@
     from domogik_packages.brain_base.lib.learn import process_args
 
     # i18n
-    OK = u"C'est noté."
+    OK = u"OK"
     PARAM = u"parametre"
 
     the_trigger, the_response = process_args(args, PARAM)

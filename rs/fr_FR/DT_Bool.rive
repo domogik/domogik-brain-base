@@ -5,7 +5,7 @@
 */
 
 /* ##suggest## 
-? .* eteind.* ((?:la |le |l ).*)
+? .* (?:eteind|eteigne).* ((?:la |le |l ).*)
 @ eteindre <star1> 
 */
 
@@ -16,7 +16,7 @@
 + (allume|allumer) [la |le |l ] * 
 @ shortcut bool command DT_Switch dev <star2> val 1
 
-+ (eteind[s]|eteindre) [la |le |l ] * 
++ (etein[d][s]|eteindre) [la |le |l ] * 
 @ shortcut bool command DT_Switch dev <star2> val 0
 
 + active [la |le |l ] *
