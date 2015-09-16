@@ -4,6 +4,10 @@
     RESPONSES = [u"Je n'ai pas compris",
                  u"Pouvez-vous reformuler ?"]
     SUGGEST_INTRODUCTION = u"Est-ce que cela signifie :"
+
+    rs.set_uservar(rs.current_user(), "last_input", " ".join(args))
+
+    # we use rs to directly get the input content
     return process_star(RESPONSES, SUGGEST_INTRODUCTION, rs)
 < object
 
@@ -15,11 +19,11 @@
 // réponse par défaut ***********************************
 // et suggestion
 + *{weight=1}
-- <call>star</call>
+- <call>star <star></call>
 
 + oui
 % est-ce que cela signifie *
-- C'est noté<call>learn_from_suggestion</call>
+@ <call>learn_from_suggestion</call><get last_input>
 
 + non
 % est-ce que cela signifie *
