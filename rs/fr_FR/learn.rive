@@ -4,7 +4,7 @@
 
     # i18n
     OK = u"OK"
-    PARAM = u"parametre"
+    PARAM = u"quelque chose"
 
     the_trigger, the_response = process_args(args, PARAM)
     rs_code = u"+ {0}\n- {1}\n\n".format(the_trigger, the_response)
@@ -20,7 +20,7 @@
 
     # i18n
     OK = u"OK"
-    PARAM = u"parametre"
+    PARAM = u"quelque chose"
 
     the_trigger, the_response = process_args(args, PARAM)
     rs_code = u"+ {0}\n@ {1}\n\n".format(the_trigger, the_response)

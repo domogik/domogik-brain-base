@@ -33,11 +33,11 @@
 
 // politesses *******************************************
 /* ##suggest## 
-? .* (?:bonjour|salut|hello|hey|coucou).*
+? .* (?:bonjour|salut|hello|coucou).*
 @ bonjour
 */
 
-+ (bonjour|salut|hello|hey|coucou) [*]{weight=1}
++ (bonjour|salut|hello|coucou) [*]{weight=1}
 - Bonjour
 - Salut
 - Hello
