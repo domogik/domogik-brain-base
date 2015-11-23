@@ -3,7 +3,7 @@
     # i18n
     RESPONSES = [u"Je n'ai pas compris",
                  u"Pouvez-vous reformuler ?"]
-    SUGGEST_INTRODUCTION = u"Est-ce que cela signifie :"
+    SUGGEST_INTRODUCTION = u"Est-ce que cela signifie : "
 
     rs.set_uservar(rs.current_user(), "last_input", " ".join(args))
 

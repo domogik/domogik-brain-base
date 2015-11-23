@@ -12,10 +12,10 @@
         "tags": ["butler"], 
         "dependencies": [], 
         "description": "Butler base brain. This package includes all the basic brain features : Domogik control, greetings, learning, date, time, math, ...", 
-        "domogik_min_version": "0.4.1", 
+        "domogik_min_version": "0.5.0", 
         "name": "base", 
         "type": "brain", 
-        "version": "1.1"
+        "version": "1.2"
     }, 
     "json_version": 2
 }

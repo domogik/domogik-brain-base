@@ -2,6 +2,12 @@
 Changelog
 =========
 
+1.2
+===
+
+* Compatibility with Rivescript 1.8.1 and Domogik 0.5+
+* Fix DT_Bool for unknown devices
+
 1.1
 ===
 

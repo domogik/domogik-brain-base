@@ -50,13 +50,13 @@
 + donner l heure
 @ shortcut time
 
-+ quel[le] heure [il] (est|fait)[-][il]
++ @quel heure [il est|est il|est-il]
 @ shortcut time
 
-+ il est quel[le] heure
++ il est @quel heure
 @ shortcut time
 
-+ quel[le] [est l] heure
++ @quel [est l] heure
 @ shortcut time
 
 // date ********************************************
@@ -72,14 +72,14 @@
 + donner la date
 @ shortcut date
 
-+ quel[le] est la date [*]
++ @quel est la date [*]
 @ shortcut date
 
-+ (indique|donne) moi la date [*]
++ (indique|donne|donnes) (moi|nous) la date [*]
 @ shortcut date
 
 + nous sommes le [*]
 @ shortcut date
 
-+ quel jour sommes[-]nous
++ @quel (jour|date) sommes[-]nous
 @ shortcut date

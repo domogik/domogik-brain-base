@@ -18,7 +18,7 @@
 
 // ##feature## parler de moi
 
-+ presente[-]toi
++ presente@s[-]toi
 - Je m'appelle <bot name> et je suis le majordome virtuel de ce logement.
 ^ Je fais partie de la suite domotique nommée Domogik et je suis l'interface entre vous et ce logement.
 ^ Vous pouvez me demander les valeurs des capteurs mais aussi de contrôller les lumières et encore plein d'autres choses.

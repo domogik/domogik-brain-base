@@ -10,10 +10,10 @@
 - La température est <call>get_sensor_value DT_Temp degrés <star></call> 
 
 // phrases
-+ combien fait[-]il [a |de la |de l |de |du |dans le |dans la |dans l |dans |d ] *
++ combien [fait il|fait-il|il fait] [@cible] *
 @shortcut temperature <star>
 
-+ (quelle est|donne[-]moi|dis[-]moi) la temperature [a |de la |de l |de |du |dans le |dans la |dans l |dans |d ] *
++ @donneMoi la temperature [@cible] *
 @shortcut temperature <star2>
 
 

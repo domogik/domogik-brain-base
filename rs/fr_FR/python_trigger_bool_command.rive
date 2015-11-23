@@ -5,8 +5,8 @@
     device = tab_args[1]
     value = tab_args[2]
     res = trigger_bool_command(dt_type=dt_type, device=device, value=value)
-    if value == None:
-        return "Error"
+    if res == None:
+        return u"Je ne sais pas ce qu'est : {0}".format(device)
     else:
-        return "OK"
+        return u"OK"
 < object

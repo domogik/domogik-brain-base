@@ -1,0 +1,18 @@
+//////////////////////////////////////////////////
+// Gestion du pluriel en option
+// Exemple d'usage : pomme@s => corresond a pomme ou pommes
+! array s = |s
+
+//////////////////////////////////////////////////
+// Raccourcis vers des classiques pour eviter l'usage de (..|..|..|..) partout
+
+// pour rappel, l'apostrophe est remplace par un espace par le butler
+! array pronom = le la les l 
+
+! array cible = a|de la|de l|de|du|dans le|dans la|dans l|dans|d
+
+! array quel = quel quelle quels quelles
+
+// pour les sensors 
+! array donneMoi = donne moi|donnes moi|quel est|quelle est|dis moi
+

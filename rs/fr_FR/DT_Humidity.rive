@@ -10,7 +10,7 @@
 - L'humidité est <call>get_sensor_value DT_Humidity pourcents <star></call>
 
 // phrases
-+ (quelle est|donne moi) l humidite [a |de la |de l |de |du |dans le |dans la |dans l |dans |d ] *
++ @donneMoi l humidite [@cible] *
 @shortcut humidity <star2>
 
 
