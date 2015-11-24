@@ -29,3 +29,10 @@
 % est-ce que cela signifie *
 - Dommage.
 
+// pour les reponses "inutiles" : on va eviter de demander 'pouvez-vous reformuler' ou autre...
++ oui {weight=1}
+- .
+
++ non {weight=1}
+- .
+

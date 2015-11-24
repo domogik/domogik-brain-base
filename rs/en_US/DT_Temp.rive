@@ -1,6 +1,6 @@
 // raccourci
 + shortcut temperature *
-- The temperature at <star> is <call>get_sensor_value DT_Temp degres <star></call> 
+- The temperature at <star> is <call>get_sensor_value en_US DT_Temp degres <star></call> 
 
 + what is the temperature (at|of) *
 @shortcut temperature <star2>

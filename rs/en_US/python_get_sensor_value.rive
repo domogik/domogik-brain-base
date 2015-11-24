@@ -1,9 +1,10 @@
 > object get_sensor_value python
     from domogik.butler.brain import get_sensor_value
-    dt_type = args[0]
-    unit = args[1]
-    device_name = args[2:]
-    value = get_sensor_value(dt_type, device_name)
+    locale = args[0]
+    dt_type = args[1]
+    unit = args[2]
+    device_name = args[3:]
+    value = get_sensor_value(rs.log, locale, dt_type, device_name)
     if value == None:
         return "unknown"
     return "{0} {1}".format(value, unit)

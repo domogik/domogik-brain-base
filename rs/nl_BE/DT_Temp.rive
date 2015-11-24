@@ -1,5 +1,5 @@
 + shortcut temperature *
-- De temperatuur in <star> is <call>get_sensor_value DT_Temp graden <star></call> 
+- De temperatuur in <star> is <call>get_sensor_value nl_BE DT_Temp graden <star></call> 
 
 + Wat is de temperatuur van *
 @shortcut temperature <star>

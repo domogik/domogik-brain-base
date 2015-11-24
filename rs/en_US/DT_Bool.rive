@@ -1,5 +1,5 @@
 + shortcut bool command * dev * val *
-- <call>trigger_bool_command <star1>__SEP__<star2>__SEP__<star3></call>
+- <call>trigger_bool_command en_US__SEP__<star1>__SEP__<star2>__SEP__<star3></call>
 
 + switch * on
 @shortcut bool command DT_Switch dev <star> val 1
