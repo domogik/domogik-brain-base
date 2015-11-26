@@ -7,10 +7,12 @@
 
     import locale
     import time
+    import traceback
     now = time.localtime(time.time())
     try:
-        locale.setlocale(locale.LC_ALL, LOCALE)
+        locale.setlocale(locale.LC_ALL, str(LOCALE))
     except:
+        rs.log.error(u"Error : {0}".format(traceback.format_exc()))
         return ERROR_LOCALE
     return time.strftime(DISPLAY_FORMAT, now)
 < object
@@ -24,10 +26,12 @@
 
     import locale
     import time
+    import traceback
     now = time.localtime(time.time())
     try:
-        locale.setlocale(locale.LC_ALL, LOCALE)
+        locale.setlocale(locale.LC_ALL, str(LOCALE))
     except:
+        rs.log.error(u"Error : {0}".format(traceback.format_exc()))
         return ERROR_LOCALE
     the_date = time.strftime(DISPLAY_FORMAT, now)
     # TODO : replace this dirty tricky thing by something better...."
