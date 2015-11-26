@@ -37,7 +37,7 @@
 @ bonjour
 */
 
-+ (bonjour|salut|hello|coucou) [*]{weight=1}
++ (bonjour|salut|hello|coucou) [*]
 - Bonjour
 - Salut
 - Hello
