@@ -33,8 +33,8 @@
 // ##feature## apprendre
 
 // trigger => réponse
-+ (si|lorsque|quand) (je|on) [te] (dis|dit) * (je|on) (veux|veut|souhaites|souhaite) que tu [me|nous] (repondes|dises) *
-- <call>learn_trigger_response <star4>__SEP__<star8></call>
++ (si|lorsque|quand) (je|on) [te] (dis|dit) * [je|on] [veux|veut|souhaite@s] [que] tu [me|nous] (repond@s|reponde@s|dise@s) *
+- <call>learn_trigger_response <star4>__SEP__<star6></call>
 
 // trigger => raccourci
 + (si|lorsque|quand) (je|on) [te] (dis|dit) * (ca|cela) (signifie|veut dire|equivaut a|correspond a) *

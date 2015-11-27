@@ -8,7 +8,7 @@
 + (<bot name>|ok|merci) *
 - {@<star2>}
 
-+ (<bot name>|ok|merci). *
++ (<bot name>|ok|merci|ok maison). *
 - {@<star2>}
 
 // tout ce qui est lié au nom ***************************
@@ -17,6 +17,9 @@
 - Que puis-je pour vous ?
 - Je suis le majordome, pour vous servir
 - Maître ?
+
++ ok maison
+@ <bot name>
 
 + qui es tu
 - Je m'appelle <bot name>
@@ -85,6 +88,9 @@
 + ok
 - .
 
-// gentilesses 
++ tu m entends
+- oui
+
+// gentilesses  ******************************************
 + qui est (@pronom) plus *
 - C'est toi <star1> plus <star2>
