@@ -35,8 +35,7 @@
     except:
         rs.log.error(u"Error : {0}".format(traceback.format_exc()))
         return ERROR_LOCALE
-    the_date = ucode(time.strftime(DISPLAY_FORMAT, now))
-    return u"{0}".format(the_date)
+    return ucode(time.strftime(DISPLAY_FORMAT, now))
 < object
 
 
