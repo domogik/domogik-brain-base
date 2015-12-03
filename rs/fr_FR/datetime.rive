@@ -8,13 +8,14 @@
     import locale
     import time
     import traceback
+    from domogik.common.utils import ucode
     now = time.localtime(time.time())
     try:
         locale.setlocale(locale.LC_ALL, str(LOCALE))
     except:
         rs.log.error(u"Error : {0}".format(traceback.format_exc()))
         return ERROR_LOCALE
-    return time.strftime(DISPLAY_FORMAT, now)
+    return ucode(time.strftime(DISPLAY_FORMAT, now))
 < object
 
 > object get_date python
@@ -27,16 +28,14 @@
     import locale
     import time
     import traceback
+    from domogik.common.utils import ucode
     now = time.localtime(time.time())
     try:
         locale.setlocale(locale.LC_ALL, str(LOCALE))
     except:
         rs.log.error(u"Error : {0}".format(traceback.format_exc()))
         return ERROR_LOCALE
-    the_date = time.strftime(DISPLAY_FORMAT, now)
-    # TODO : replace this dirty tricky thing by something better...."
-    the_date = the_date.replace("û", "u")
-    the_date = the_date.replace("é", "e")
+    the_date = ucode(time.strftime(DISPLAY_FORMAT, now))
     return u"{0}".format(the_date)
 < object
 
