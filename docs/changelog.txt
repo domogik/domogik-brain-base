@@ -2,6 +2,16 @@
 Changelog
 =========
 
+1.3
+===
+
+* Big internal upgrades to had more capabilities to commands and sensors management. 
+* Add DT_ColorRGBHexa management.
+* Complete DT_Bool and childs management.
+* Add management of basic sensors : DT_Number, DT_Bool, DT_String.
+* Various minor improvments.
+* en_US and nl_NL features are not as complete as fr_FR. See the 'TODO' tags in the .rive files for more informations.
+
 1.2
 ===
 

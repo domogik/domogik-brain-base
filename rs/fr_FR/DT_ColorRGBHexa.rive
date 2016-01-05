@@ -1,0 +1,51 @@
+// Changement de couleur
+
++ shortcut color command * dev * val *
+- <call>do_color_command fr_FR, <star1>, <star2>, <star3></call>
+
++ (met|mets|allume|allumes|allumer) [@pronom] * en *
+@ shortcut color command DT_ColorRGBHexa dev <star2> val <star3>
+
++ change la couleur [@pronom] * en *
+@ shortcut color command DT_ColorRGBHexa dev <star1> val <star2>
+
++ (met|mets|change|changes) la couleur * [@cible] *
+@ shortcut color command DT_ColorRGBHexa dev <star3> val <star2>
+
+
+// Information sur les couleurs de base disponibles
+// il y a tellement de manières de demander la listes des couleurs, qu'ici je choisis de tout baser sur les suggestions...
+
+/* ##suggest## 
+? .* couleurs disponible.*
+@ quelles couleurs sont disponibles
+*/
+
+/* ##suggest## 
+? .*quelles (.*) couleurs.*
+@ quelles couleurs sont disponibles
+*/
+
+/* ##suggest## 
+? .* liste.* couleur.*
+@ quelles couleurs sont disponibles
+*/
+
++ @quel couleurs sont disponibles
+@ shortcut color command DT_ColorRGBHexa dev null val listcolors
+
+
+// Informations sur les déclinaisons des couleurs de base
+
+/* ##suggest## 
+? .* nuances.* couleur (.*)
+@ quelles sont les declinaisons de la couleur <star1>
+*/
+
+/* ##suggest## 
+? .* déclinaisons.* couleur (.*)
+@ quelles sont les declinaisons de la couleur <star1>
+*/
+
++ @quel sont les declinaisons de la couleur *
+- <call>do_color_command fr_FR, DT_ColorRGBHexa, null, detailcolor, <star1></call>

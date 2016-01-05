@@ -1,7 +1,7 @@
 > object get_time python
     #i18n
     DISPLAY_FORMAT = "%-H:%M "
-    LOCALE = "en_US.UTF-8"
+    LOCALE = "nl_BE.UTF-8"
     ERROR_LOCALE = u"Lokale geconfigureerd is niet goed : {0}".format(LOCALE)
 
 
@@ -21,7 +21,7 @@
 > object get_date python
     #i18n
     DISPLAY_FORMAT = "%A %d %B"
-    LOCALE = "en_US.UTF-8"
+    LOCALE = "nl_BE.UTF-8"
     ERROR_LOCALE = u"Lokale geconfigureerd is niet goed : {0}".format(LOCALE)
 
 

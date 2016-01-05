@@ -1,5 +1,5 @@
 + shortcut bool command * dev * val *
-- <call>trigger_bool_command en_US__SEP__<star1>__SEP__<star2>__SEP__<star3></call>
+- <call>do_bool_or_trigger_command en_US, <star1>, <star2>, <star3></call>
 
 + switch * on
 @shortcut bool command DT_Switch dev <star> val 1
@@ -12,3 +12,7 @@
 
 + disable *
 @shortcut bool command DT_Enable dev <star> val 0
+
+
+// TODO : get the status of switches and open/close sensors
+// See fr_FR for the example

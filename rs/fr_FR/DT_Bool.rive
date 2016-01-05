@@ -1,3 +1,6 @@
+// Ce fichier comprend tous les enfants de DT_Bool
+
+//////// Actions
 
 /* ##suggest## 
 ? .* allume.* ((?:la |le |l ).*)
@@ -5,23 +8,121 @@
 */
 
 /* ##suggest## 
-? .* (?:eteind|eteigne).* ((?:la |le |l ).*)
+? .* (?:etein|eteigne).* ((?:la |le |l ).*)
 @ eteindre <star1> 
 */
 
-
 + shortcut bool command * dev * val *
-- <call>trigger_bool_command fr_FR__SEP__<star1>__SEP__<star2>__SEP__<star3></call>
+- <call>do_bool_or_trigger_command fr_FR, <star1>, <star2>, <star3></call>
 
 + (allume|allumes|allumer) [@pronom] *
-@ shortcut bool command DT_Switch dev <star2> val 1
+@ shortcut bool command DT_Switch|DT_ColorRGBHexa dev <star2> val 1
 
-+ (eteind|eteinds|eteindre) [@pronom] *
-@ shortcut bool command DT_Switch dev <star2> val 0
++ (etein|eteins|eteindre) [@pronom] *
+@ shortcut bool command DT_Switch|DT_ColorRGBHexa dev <star2> val 0
 
 + active [@pronom] *
-@ shortcut bool command DT_Enable dev <star> val 1
+@ shortcut bool command DT_Enable dev <star1> val 1
 
 + desactive [@pronom] *
-@ shortcut bool command DT_Enable dev <star> val 0
+@ shortcut bool command DT_Enable dev <star1> val 0
+
+
+//////// Lumières/prises - Etat - 1 - status
+! array switch = la prise|la lumiere
+
++ shortcut switch status *
+* <set val=<call>get_sensor_value fr_FR, DT_Switch|DT_ColorRGBHexa, , <star></call>><get val> == inconnue => Je ne connais pas <star>
+* <get val> == 0 => Eteind
+* <get val> == 000000 => Eteind
+- Allumé
+
++ comment est (@switch) [@cible] *
+@ shortcut switch status <star2> 
+
+
+//////// Lumières/prises - Etat - 2 - allumé ?
+
++ shortcut is switch on *
+* <set val=<call>get_sensor_value fr_FR, DT_Switch|DT_ColorRGBHexa, , <star></call>><get val> == inconnue => Je ne connais pas <star>
+* <get val> == 0 => Non
+* <get val> == 000000 => Non
+- Oui
+
++ est[-]ce que (@switch) est allume@e [@cible] *
+@ shortcut is switch on <star2> 
+
++ est[-]ce que (@switch) [@cible] * est allume@e
+@ shortcut is switch on <star2> 
+
++ est[-]ce que [@pronom] * est allume@e
+@ shortcut is switch on <star1> 
+
+
+//////// Lumières/prises - Etat - 3 - éteind ?
+
++ shortcut is switch off *
+* <set val=<call>get_sensor_value fr_FR, DT_Switch|DT_ColorRGBHexa, , <star></call>><get val> == inconnue => Je ne connais pas <star>
+* <get val> == 0 => Oui
+* <get val> == 000000 => Oui
+- Non
+
++ est[-]ce que (@switch) est (eteinte|coupe@e) [@cible] *
+@ shortcut is switch off <star3> 
+
++ est[-]ce que (@switch) [@cible] * est (eteinte|coupe@e)
+@ shortcut is switch off <star2> 
+
++ est[-]ce que [@pronom] * est (eteinte|coupe@e)
+@ shortcut is switch off <star1> 
+
+
+
+
+
+//////// Ouvertures - Etat - 1 - status
+// note : volet et rideau au pluriel car il peut y en avoir 2 par ouvrant
+! array openclose = la porte fenetre|la porte de garage|la porte|la fenetre|la baie vitree|la baie|le volet|les volets|la persienne|le rideau|les rideaux|le store|le velux
+
++ shortcut openclose status *
+* <set val=<call>get_sensor_value fr_FR, DT_OpenClose, , <star></call>><get val> == inconnue => Je ne connais pas <star>
+* <get val> == 0 => Ouvert
+- Fermé
+
++ comment est (@openclose) [@cible] *
+@ shortcut openclose status <star2> 
+
+
+//////// Ouvertures - Etat - 2 - fermée (1) ?
+
++ shortcut is openclose closed *
+* <set val=<call>get_sensor_value fr_FR, DT_OpenClose, , <star></call>><get val> == inconnue => Je ne connais pas <star>
+* <get val> == 0 => Non
+- Oui
+
++ est[-]ce que (@openclose) est ferme@e [@cible] *
+@ shortcut is openclose closed <star2> 
+
++ est[-]ce que (@openclose) [@cible] * est ferme@e
+@ shortcut is openclose closed <star2> 
+
++ est[-]ce que [@pronom] * est ferme@e
+@ shortcut is openclose closed <star1> 
+
+
+//////// Ouvertures - Etat - 3 - ouverte ?
+
++ shortcut is openclose open *
+* <set val=<call>get_sensor_value fr_FR, DT_OpenClose, , <star></call>><get val> == inconnue => Je ne connais pas <star>
+* <get val> == 0 => Oui
+- Non
+
++ est[-]ce que (@openclose) est ouvert@e [@cible] *
+@ shortcut is openclose open <star2> 
+
++ est[-]ce que (@openclose) [@cible] * est ouvert@e
+@ shortcut is openclose open <star2> 
+
++ est[-]ce que [@pronom] * est (eteinte|coupe@e)
+@ shortcut is openclose open <star1> 
 

@@ -1,7 +1,8 @@
 //////////////////////////////////////////////////
-// Gestion du pluriel en option
+// Gestion du pluriel/féminin en option
 // Exemple d'usage : pomme@s => corresond a pomme ou pommes
 ! array s = |s
+! array e = |e
 
 //////////////////////////////////////////////////
 // Raccourcis vers des classiques pour eviter l'usage de (..|..|..|..) partout
@@ -9,7 +10,7 @@
 // pour rappel, l'apostrophe est remplace par un espace par le butler
 ! array pronom = le la les l 
 
-! array cible = a|de la|de l|de|du|dans le|dans la|dans l|dans|d
+! array cible = a|de la|de l|de|du|dans le|dans la|dans l|dans|d|sur le|sur la|sur l
 
 ! array quel = quel quelle quels quelles
 
