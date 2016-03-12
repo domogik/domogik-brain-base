@@ -5,7 +5,7 @@
     + <bot name>
     - Je suis en mode silencieux. Dites tu peux reparler pour me sortir de mon silence.
 
-    + tu peux (reparler| sortir du silence)
+    + tu peux (parler|reparler|sortir du silence)
     - merci {topic=random}
 
 
