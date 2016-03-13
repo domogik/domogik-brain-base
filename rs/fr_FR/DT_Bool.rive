@@ -27,6 +27,12 @@
 + desactive [@pronom] *
 @ shortcut bool command DT_Enable dev <star1> val 0
 
++ ouvre [@pronom] *
+@ shortcut bool command DT_Switch|DT_Bool dev <star1> val 1
+
++ ferme [@pronom] *
+@ shortcut bool command DT_Switch|DT_Bool dev <star1> val 0
+
 
 //////// Lumières/prises - Etat - 1 - status
 ! array switch = la prise|la lumiere

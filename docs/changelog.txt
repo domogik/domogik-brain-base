@@ -2,6 +2,11 @@
 Changelog
 =========
 
+1.4
+===
+
+* Small improvment on @donneMoi in begin.rive (fr_FR)
+
 1.3
 ===
 
