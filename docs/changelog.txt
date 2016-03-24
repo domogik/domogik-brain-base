@@ -6,6 +6,7 @@ Changelog
 ===
 
 * Small improvment on @donneMoi in begin.rive (fr_FR)
+* Add network test (fr_FR)
 
 1.3
 ===

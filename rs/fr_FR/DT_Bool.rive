@@ -1,6 +1,7 @@
 // Ce fichier comprend tous les enfants de DT_Bool
 
 //////// Actions
+// ##feature## controler des lumieres ou prises
 
 /* ##suggest## 
 ? .* allume.* ((?:la |le |l ).*)
@@ -26,12 +27,6 @@
 
 + desactive [@pronom] *
 @ shortcut bool command DT_Enable dev <star1> val 0
-
-+ ouvre [@pronom] *
-@ shortcut bool command DT_Switch|DT_Bool dev <star1> val 1
-
-+ ferme [@pronom] *
-@ shortcut bool command DT_Switch|DT_Bool dev <star1> val 0
 
 
 //////// Lumières/prises - Etat - 1 - status

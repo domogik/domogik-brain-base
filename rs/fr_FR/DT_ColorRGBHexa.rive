@@ -1,4 +1,5 @@
 // Changement de couleur
+// ##feature## controler des lumieres de couleur
 
 + shortcut color command * dev * val *
 - <call>do_color_command fr_FR, <star1>, <star2>, <star3></call>
