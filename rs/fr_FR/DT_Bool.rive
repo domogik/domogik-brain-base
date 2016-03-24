@@ -1,7 +1,7 @@
 // Ce fichier comprend tous les enfants de DT_Bool
 
 //////// Actions
-// ##feature## controler des lumieres ou prises
+// ##feature## contrôler des lumières ou prises
 
 /* ##suggest## 
 ? .* allume.* ((?:la |le |l ).*)
