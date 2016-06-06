@@ -1,8 +1,8 @@
-Variables françaises pour l'utilisateur
-=======================================
+Variables pour l'utilisateur
+============================
 
-nom
----
+name
+----
 
 Cette variable contient le nom de l'utilisateur. Elle peut être utilisée pour tout device qui est censé être lié à un utilisateur.
 

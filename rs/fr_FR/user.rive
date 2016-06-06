@@ -1,5 +1,5 @@
 + je suis *
-- <set nom=<star>>Ok
+- <set name=<star>>Ok
 
 + qui suis[-]je 
-- Tu es <get nom>
+- Tu es <get name>
