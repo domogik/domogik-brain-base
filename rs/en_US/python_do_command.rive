@@ -1,4 +1,10 @@
-> object do_bool_or_trigger_command python
+> object do_command python
+    """
+        @param 0 : locale
+        @param 1 : a list of datatypes separated by |
+        @param 2 : device name
+        @param 3 : value
+    """
     from domogik.butler.brain import do_command
     tab_args = ' '.join(args).split(",")
     locale = tab_args[0].strip()

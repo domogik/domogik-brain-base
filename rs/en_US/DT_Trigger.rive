@@ -5,7 +5,7 @@
 */
 
 + shortcut trigger command * dev *
-- <call>do_bool_or_trigger_command fr_FR, <star1>, <star2></call>
+- <call>do_command fr_FR, <star1>, <star2></call>
 
 + (execute) *
 @ shortcut trigger command DT_Trigger dev <star2>

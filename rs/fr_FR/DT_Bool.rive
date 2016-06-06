@@ -14,7 +14,7 @@
 */
 
 + shortcut bool command * dev * val *
-- <call>do_bool_or_trigger_command fr_FR, <star1>, <star2>, <star3></call>
+- <call>do_command fr_FR, <star1>, <star2>, <star3></call>
 
 + (allume|allumes|allumer) [@pronom] *
 @ shortcut bool command DT_Switch|DT_ColorRGBHexa dev <star2> val 1

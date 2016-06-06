@@ -1,5 +1,5 @@
 + shortcut bool command * dev * val *
-- <call>do_bool_or_trigger_command nl_BE, <star1>, <star2>, <star3></call>
+- <call>do_command nl_BE, <star1>, <star2>, <star3></call>
 
 + lichten *
 @shortcut bool command DT_Switch dev <star> val 1

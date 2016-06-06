@@ -1,4 +1,10 @@
 > object do_color_command python
+    """
+       @param 0 : locale
+       @param 1 : list of data type separated by a |
+       @param 2 : device
+       @param 3 : color value
+    """
     from domogik_packages.brain_base.lib.color_command import color_command
 
     # source : https://gist.githubusercontent.com/lunohodov/1995178/raw/cb8cf1ebe1d1b8fa5759e287ebd6eaecbe3bc3e4/ral_standard.csv

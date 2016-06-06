@@ -1,6 +1,6 @@
 
 + shortcut trigger command * dev *
-- <call>do_bool_or_trigger_command nl_NL, <star1>, <star2></call>
+- <call>do_command nl_NL, <star1>, <star2></call>
 
 + (runs) *
 @ shortcut trigger command DT_Trigger dev <star2>
