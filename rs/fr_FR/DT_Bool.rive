@@ -22,6 +22,27 @@
 + (etein|eteins|eteindre) [@pronom] *
 @ shortcut bool command DT_Switch|DT_ColorRGBHexa dev <star2> val 0
 
+
+
+// note : volet et rideau au pluriel car il peut y en avoir 2 par ouvrant
+! array openclose = la porte fenetre|la porte de garage|la porte|la fenetre|la baie vitree|la baie|le volet|les volets|la persienne|le rideau|les rideaux|le store|le velux
+
++ (ouvre|ouvres|monte|montes) (@openclose) [@cible] *
+@ shortcut bool command DT_Switch|DT_OpenClose dev <star3> val 1
+
++ (ouvre|ouvres|monte|montes) [@pronom] *
+@ shortcut bool command DT_Switch|DT_OpenClose dev <star2> val 1
+
++ (ferme|fermes|descend|descends) (@openclose) [@cible] *
+@ shortcut bool command DT_Switch|DT_OpenClose dev <star3> val 0
+
++ (ferme|fermes|descend|descends) [@pronom] *
+@ shortcut bool command DT_Switch|DT_OpenClose dev <star2> val 0
+
+
+
+
+
 + active [@pronom] *
 @ shortcut bool command DT_Enable dev <star1> val 1
 
@@ -82,8 +103,6 @@
 
 
 //////// Ouvertures - Etat - 1 - status
-// note : volet et rideau au pluriel car il peut y en avoir 2 par ouvrant
-! array openclose = la porte fenetre|la porte de garage|la porte|la fenetre|la baie vitree|la baie|le volet|les volets|la persienne|le rideau|les rideaux|le store|le velux
 
 + shortcut openclose status *
 * <set val=<call>get_sensor_value fr_FR, DT_OpenClose, , <star></call>><get val> == inconnue => Je ne connais pas <star>

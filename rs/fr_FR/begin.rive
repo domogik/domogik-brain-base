@@ -15,7 +15,7 @@
 ! array quel = quel quelle quels quelles
 
 // pour les sensors 
-! array donneMoi = donne moi|donnes moi|quel est|quelle est|dis moi
+! array donneMoi = donne-moi|donnes-moi|donne moi|donnes moi|quel-est|quelle-est|quel est|quelle est|dis-moi|dis moi
 
 // pour des demandes
 ! array peuxTu = peux tu|peux-tu|est ce que tu peux|est-ce que tu peux
