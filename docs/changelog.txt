@@ -7,6 +7,8 @@ Changelog
 
 * Small improvment on @donneMoi in begin.rive (fr_FR)
 * Add network test (fr_FR)
+* Add user management feature for the 'name' information (fr_FR)
+* Upgrades to do commands and get sensors : add the ability to use the command or sensor reference (used)
 
 1.3
 ===

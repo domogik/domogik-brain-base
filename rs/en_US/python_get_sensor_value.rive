@@ -1,4 +1,10 @@
 > object get_sensor_value python
+    """
+        @param 0 : locale
+        @param 1 : a list of datatypes separated by |
+        @param 2 : the unit (for string return)
+        @param 3 : device name
+    """
     from domogik.butler.brain import get_sensor_value
     tab_args = ' '.join(args).split(",")
     print(tab_args[0])
