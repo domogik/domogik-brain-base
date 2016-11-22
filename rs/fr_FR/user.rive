@@ -1,9 +1,6 @@
 // On definit le nom /////////////////////////////////////////////////
-+ je (suis|m appelle|me nomme|me prenomme) *
-- <set name=<star2>>Ok.
-
-+ mon (prenom|identite|surnom|nom) est *
-- <set name=<star2>>Ok.
++ (@jeSuis) *
+- <set name=<star2>>Ok. Tu es <get name>.
 
 + qui suis[-]je 
 * <get name> == undefined => Je ne sais pas comment tu t'appelles.
