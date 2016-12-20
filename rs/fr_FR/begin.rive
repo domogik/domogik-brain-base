@@ -26,5 +26,5 @@
 //////////////////////////////////////////////////
 // Unités
 
-! array pourcent = pourcentages|pourcentage|pourcents|pourcent
-! array kg = kilogrammes|kilogramme|kilo grammes|kilo grammes|kilos|kilo|kg
+! array pourcent = pourcentage|pourcentages|pourcent|pourcents
+! array kg = kilogramme|kilogrammes|kilo gramme|kilo grammes|kilo|kilos|kg|kgs
