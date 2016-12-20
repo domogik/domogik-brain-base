@@ -1,7 +1,8 @@
 //////////////////////////////////////////////////
-// Gestion du pluriel en option
+// Gestion du pluriel/féminin en option
 // Exemple d'usage : pomme@s => corresond a pomme ou pommes
 ! array s = |s
+! array e = |e
 
 //////////////////////////////////////////////////
 // Raccourcis vers des classiques pour eviter l'usage de (..|..|..|..) partout
@@ -9,10 +10,21 @@
 // pour rappel, l'apostrophe est remplace par un espace par le butler
 ! array pronom = le la les l 
 
-! array cible = a|de la|de l|de|du|dans le|dans la|dans l|dans|d
+! array cible = a|de la|de l|de|du|dans le|dans la|dans l|dans|d|sur le|sur la|sur l
 
 ! array quel = quel quelle quels quelles
 
 // pour les sensors 
-! array donneMoi = donne moi|donnes moi|donne-moi|quel est|quelle est|dis moi
+! array donneMoi = donne-moi|donnes-moi|donne moi|donnes moi|quel-est|quelle-est|quel est|quelle est|dis-moi|dis moi
 
+// pour des demandes
+! array peuxTu = peux tu|peux-tu|est ce que tu peux|est-ce que tu peux
+
+// pour se nommer
+! array jeSuis = je suis|je m appelle|je me nomme|je me prenomme|mon prenom est|mon identite est|mon surnom est|mon nom est
+
+//////////////////////////////////////////////////
+// Unités
+
+! array pourcent = pourcentage|pourcentages|pourcent|pourcents
+! array kg = kilogramme|kilogrammes|kilo gramme|kilo grammes|kilo|kilos|kg|kgs

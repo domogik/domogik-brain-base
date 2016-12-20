@@ -1,0 +1,15 @@
+// DT_Basics is a file for all sensors of :
+// - DT_Number
+// - DT_String
+// - DT_Bool
+
+
+// shortcut
+// double ,, because no unit
++ shortcut basic *
+- The value is <call>get_sensor_value en_US, DT_Number|DT_String|DT_Bool, , <star></call> 
+
++ give me the value (of|at) *
+@shortcut basic <star2>
+
+

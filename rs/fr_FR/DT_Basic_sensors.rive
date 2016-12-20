@@ -1,0 +1,22 @@
+// DT_Basics is a file for all sensors of :
+// - DT_Number
+// - DT_String
+// - DT_Bool
+
+
+/* ##suggest## 
+? .* valeur .* ((?:a |de la |de l |de |du |dans le |dans la |dans l |dans |d ).*)
+@ quelle est la valeur <star1>
+*/
+
+
+// raccourci
+// double ,, car pas d'unité
++ shortcut basic *
+- La valeur est <call>get_sensor_value fr_FR, DT_Number|DT_String|DT_Bool, , <star></call> 
+
+// phrases
++ @donneMoi la valeur [@cible] *
+@shortcut basic <star1>
+
+

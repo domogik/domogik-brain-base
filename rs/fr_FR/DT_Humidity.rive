@@ -1,3 +1,4 @@
+// ##feature## donner l'humidité
 
 /* ##suggest## 
 ? .* humidite.* ((?:a |de la |de l |de |du |dans le |dans la |dans l |dans |d ).*)
@@ -7,7 +8,7 @@
 
 // raccourci
 + shortcut humidity *
-- L'humidité est <call>get_sensor_value fr_FR DT_Humidity pourcents <star></call>
+- L'humidité est <call>get_sensor_value fr_FR, DT_Humidity, pourcents, <star></call>
 
 // phrases
 + @donneMoi l humidite [@cible] *

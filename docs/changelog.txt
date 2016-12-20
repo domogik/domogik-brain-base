@@ -2,6 +2,24 @@
 Changelog
 =========
 
+1.4
+===
+
+* Small improvment on @donneMoi in begin.rive (fr_FR)
+* Add network test (fr_FR)
+* Add user management feature for the 'name' information (fr_FR)
+* Upgrades to do commands and get sensors : add the ability to use the command or sensor reference (used)
+
+1.3
+===
+
+* Big internal upgrades to had more capabilities to commands and sensors management. 
+* Add DT_ColorRGBHexa management.
+* Complete DT_Bool and childs management.
+* Add management of basic sensors : DT_Number, DT_Bool, DT_String.
+* Various minor improvments.
+* en_US and nl_NL features are not as complete as fr_FR. See the 'TODO' tags in the .rive files for more informations.
+
 1.2
 ===
 

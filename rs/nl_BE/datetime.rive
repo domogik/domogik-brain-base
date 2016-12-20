@@ -1,35 +1,41 @@
 > object get_time python
     #i18n
     DISPLAY_FORMAT = "%-H:%M "
-    LOCALE = "en_US.UTF-8"
+    LOCALE = "nl_BE.UTF-8"
     ERROR_LOCALE = u"Lokale geconfigureerd is niet goed : {0}".format(LOCALE)
 
 
     import locale
     import time
+    import traceback
+    from domogik.common.utils import ucode
     now = time.localtime(time.time())
     try:
-        locale.setlocale(locale.LC_ALL, LOCALE)
+        locale.setlocale(locale.LC_ALL, str(LOCALE))
     except:
+        rs.log.error(u"Error : {0}".format(traceback.format_exc()))
         return ERROR_LOCALE
-    return time.strftime(DISPLAY_FORMAT, now)
+    return ucode(time.strftime(DISPLAY_FORMAT, now))
 < object
 
 > object get_date python
     #i18n
     DISPLAY_FORMAT = "%A %d %B"
-    LOCALE = "en_US.UTF-8"
+    LOCALE = "nl_BE.UTF-8"
     ERROR_LOCALE = u"Lokale geconfigureerd is niet goed : {0}".format(LOCALE)
 
 
     import locale
     import time
+    import traceback
+    from domogik.common.utils import ucode
     now = time.localtime(time.time())
     try:
-        locale.setlocale(locale.LC_ALL, LOCALE)
+        locale.setlocale(locale.LC_ALL, str(LOCALE))
     except:
+        rs.log.error(u"Error : {0}".format(traceback.format_exc()))
         return ERROR_LOCALE
-    return time.strftime(DISPLAY_FORMAT, now)
+    return ucode(time.strftime(DISPLAY_FORMAT, now))
 < object
 
 

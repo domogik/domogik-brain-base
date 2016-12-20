@@ -32,6 +32,8 @@
 
 // ##feature## apprendre
 
+// le séparateur est __SEP__ et pas la virgule car la virgule peut être utilisée dans le trigger ou la réponse
+
 // trigger => réponse
 + (si|lorsque|quand) (je|on) [te] (dis|dit) * [je|on] [veux|veut|souhaite@s] [que] tu [me|nous] (repond@s|reponde@s|dise@s) *
 - <call>learn_trigger_response <star4>__SEP__<star6></call>

@@ -1,0 +1,12 @@
+
+/* ##suggest## 
+? .* execute.* ((?:la |le |l ).*)
+@ execute <star1>
+*/
+
++ shortcut trigger command * dev *
+- <call>do_command fr_FR, <star1>, <star2></call>
+
++ (execute|executer) [@pronom] *
+@ shortcut trigger command DT_Trigger dev <star2>
+

@@ -1,3 +1,4 @@
+// ##feature## donner la température
 
 /* ##suggest## 
 ? .* temperature.* ((?:a |de la |de l |de |du |dans le |dans la |dans l |dans |d ).*)
@@ -7,7 +8,7 @@
 
 // raccourci
 + shortcut temperature *
-- La température est <call>get_sensor_value fr_FR DT_Temp degrés <star></call> 
+- La température est <call>get_sensor_value fr_FR, DT_Temp, degrés, <star></call> 
 
 // phrases
 + combien [fait il|fait-il|il fait] [@cible] *

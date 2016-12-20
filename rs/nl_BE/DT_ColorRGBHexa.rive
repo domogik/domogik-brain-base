@@ -1,0 +1,8 @@
+
++ shortcut color command * dev * val *
+- <call>do_color_command nl_BE, <star1>, <star2>, <star3></call>
+
++ verander de kleur van * naar *
+@ shortcut color command DT_ColorRGBHexa dev <star1> val <star2>
+
+// TODO : complete with questions to ask about the colors. See fr_FR for the example

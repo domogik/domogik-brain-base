@@ -1,0 +1,17 @@
+
+/* ##suggest## 
+? .* xxxx .* ((?:a |de la |de l |de |du |dans le |dans la |dans l |dans |d ).*)
+@ quelle est la xxxx <star1>
+*/
+
+
+// raccourci
+// double ,, car pas d'unité
++ shortcut string *
+- La xxxx est <call>get_sensor_value fr_FR, DT_String, , <star></call> 
+
+// phrases
++ @donneMoi le contenu [@cible] *
+@shortcut string <star1>
+
+
