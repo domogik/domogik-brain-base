@@ -12,14 +12,21 @@
 ? .* (?:etein|eteigne).* ((?:la |le |l ).*)
 @ eteindre <star1> 
 */
+! array onoff = la lumiere|les lumieres|la lampe|les lampes
 
 + shortcut bool command * dev * val *
 - <call>do_command fr_FR, <star1>, <star2>, <star3></call>
 
++ (allume|allumes|allumer) (@onoff) [@cible] *
+@ shortcut bool command DT_Switch|DT_ColorRGBHexa dev <star3> val 1
+
 + (allume|allumes|allumer) [@pronom] *
 @ shortcut bool command DT_Switch|DT_ColorRGBHexa dev <star2> val 1
 
-+ (etein|eteins|eteindre) [@pronom] *
++ (etein|eteins|eteind|eteindre) (@onoff) [@cible] *
+@ shortcut bool command DT_Switch|DT_ColorRGBHexa dev <star3> val 0
+
++ (etein|eteins|eteind|eteindre) [@pronom] *
 @ shortcut bool command DT_Switch|DT_ColorRGBHexa dev <star2> val 0
 
 
@@ -143,6 +150,6 @@
 + est[-]ce que (@openclose) [@cible] * est ouvert@e
 @ shortcut is openclose open <star2> 
 
-+ est[-]ce que [@pronom] * est (eteinte|coupe@e)
++ est[-]ce que [@pronom] * est ferme@e
 @ shortcut is openclose open <star1> 
 

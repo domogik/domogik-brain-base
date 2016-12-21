@@ -7,7 +7,7 @@
 + (met|mets|allume|allumes|allumer) [@pronom] * en *
 @ shortcut color command DT_ColorRGBHexa dev <star2> val <star3>
 
-+ change la couleur [@pronom] * en *
++ change la couleur [@cible] * en *
 @ shortcut color command DT_ColorRGBHexa dev <star1> val <star2>
 
 + (met|mets|change|changes) la couleur * [@cible] *
@@ -45,6 +45,11 @@
 
 /* ##suggest## 
 ? .* déclinaisons.* couleur (.*)
+@ quelles sont les declinaisons de la couleur <star1>
+*/
+
+/* ##suggest## 
+? .* déclinaisons.* (.*)
 @ quelles sont les declinaisons de la couleur <star1>
 */
 

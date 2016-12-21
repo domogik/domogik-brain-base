@@ -46,7 +46,7 @@
 */
 
 + shortcut time
-- il est <call>get_time</call>
+- Il est <call>get_time</call>
 
 // ##feature## donner l'heure
 + donner l heure
@@ -68,7 +68,7 @@
 */
 
 + shortcut date
-- nous sommes le <call>get_date</call>
+- Nous sommes le <call>get_date</call>
 
 // ##feature## donner la date
 + donner la date
