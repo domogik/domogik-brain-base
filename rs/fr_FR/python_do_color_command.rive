@@ -250,5 +250,5 @@
     cfg_i18n['TXT_BASIC_COLORS_2'] = u"Il y a aussi plein d'autres couleurs disponibles. Vous pouvez me demander les déclinaisons pour une couleur de base"
     cfg_i18n['TXT_COLOR_LIST'] = u"Voici les déclinaisons de "
 
-    return color_command(rs.log, args, cfg_i18n)
+    return color_command(rs.log, rs.devices, args, cfg_i18n)
 < object

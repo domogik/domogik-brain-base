@@ -11,7 +11,7 @@
     dt_type_list = tab_args[1].strip()
     device = tab_args[2].strip()
     value = tab_args[3].strip()
-    res = do_command(rs.log, locale, dt_type_list=dt_type_list, device=device, value=value)
+    res = do_command(rs.log, rs.devices, locale, dt_type_list=dt_type_list, device=device, value=value)
     if value == None:
         return "Error"
     else:

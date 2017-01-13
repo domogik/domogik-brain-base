@@ -13,7 +13,7 @@
     dt_type = tab_args[1].strip()
     unit = tab_args[2].strip()
     device_name = tab_args[3].strip()
-    value = get_sensor_value(rs.log, locale, dt_type, device_name)
+    value = get_sensor_value(rs.log, rs.devices, locale, dt_type, device_name)
     if value == None:
         return u"inconnue"
     if unit != "":

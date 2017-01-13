@@ -250,5 +250,5 @@
     cfg_i18n['TXT_BASIC_COLORS_2'] = u"Er zijn ook tal van andere kleuren beschikbaar . Je kunt het mij vraagt verbuigingen voor een basiskleur"
     cfg_i18n['TXT_COLOR_LIST'] = u"Hier zijn verbuigingen"
 
-    return color_command(rs.log, args, cfg_i18n)
+    return color_command(rs.log, rs.devices, args, cfg_i18n)
 < object

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-def color_command(log, args, cfg_i18n):
+def color_command(log, devices, args, cfg_i18n):
     from domogik.butler.brain import do_command
     from domogik.butler.brain import remove_accents
 
@@ -52,7 +52,7 @@ def color_command(log, args, cfg_i18n):
 
     else:
         return u"{0}".format(UNKNOWN_COLOR)
-    res = do_command(log, locale, dt_type_list=dt_type_list, device=device, value=value)
+    res = do_command(log, devices, locale, dt_type_list=dt_type_list, device=device, value=value)
     if res == None:
         return u"{0} : {1}".format(UNKNOWN_DEVICE, device)
     else:

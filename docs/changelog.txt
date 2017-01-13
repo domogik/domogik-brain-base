@@ -2,6 +2,14 @@
 Changelog
 =========
 
+1.5
+===
+
+* WARNING : This release needs at least Domogik 0.5.2!
+* Performances improvment : up to 10x faster on sensors and commands requests (all languages).
+* Add a 'can you' trigger for all queries (fr_FR). See can_you.rive and @peuxTu in begin.rive for more details.
+* Add more interactions for natural speaking (fr_FR)
+
 1.4
 ===
 

@@ -4,13 +4,13 @@
 + shortcut color command * dev * val *
 - <call>do_color_command fr_FR, <star1>, <star2>, <star3></call>
 
-+ (met|mets|allume|allumes|allumer) [@pronom] * en *
++ (met|mets|mettre|allume|allumes|allumer) [@pronom] * en *
 @ shortcut color command DT_ColorRGBHexa dev <star2> val <star3>
 
-+ change la couleur [@cible] * en *
-@ shortcut color command DT_ColorRGBHexa dev <star1> val <star2>
++ (met|mets|mettre|change|changes|changer|modifie|modifies|modifier) la couleur [@cible] * en *
+@ shortcut color command DT_ColorRGBHexa dev <star2> val <star3>
 
-+ (met|mets|change|changes) la couleur * [@cible] *
++ (met|mets|mettre|change|changes|changer|modifie|modifies|modifier) la couleur * [@cible] *
 @ shortcut color command DT_ColorRGBHexa dev <star3> val <star2>
 
 
