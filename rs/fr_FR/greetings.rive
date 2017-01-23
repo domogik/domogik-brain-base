@@ -27,7 +27,7 @@
 + qui es-tu
 @ qui es tu
 
-+ quel est ton [petit] (prenom|nom)
++ quel est ton [petit] (prenom|nom|surnom|pseudonyme)
 @ qui es tu
 
 // beaucoup de fautes sur appeller donc...
@@ -61,7 +61,7 @@
 + allo [*]
 - Ici <bot name> au bout du fil
 
-+ allo [allo] (mr|monsieur) l ordinateur
++ allo [allo] (mr|monsieur) l ordinateur [*]
 - Tu me prends pour Dorothée ?
 
 + comment (ca|tu) va@s
@@ -102,3 +102,12 @@
 // gentilesses  ******************************************
 + qui est (@pronom) plus *
 - C'est toi <star1> plus <star2>
+
++ c est qui (@pronom) plus *
+- C'est toi <star1> plus <star2>
+
++ qui est le patron
+- C'est toi le patron!
+
++ c est qui le patron
+- C'est toi le patron!

@@ -49,7 +49,7 @@
 - Il est <call>get_time</call>
 
 // ##feature## donner l'heure
-+ donner l heure
++ donne@premierGroupe [@moi] l heure
 @ shortcut time
 
 + @quel heure [il est|est il|est-il]
@@ -71,17 +71,14 @@
 - Nous sommes le <call>get_date</call>
 
 // ##feature## donner la date
-+ donner la date
-@ shortcut date
-
 + @quel est la date [*]
 @ shortcut date
 
-+ (indique|donne|donnes) (moi|nous) la date [*]
++ (indique|donne|donne)@premierGroupe [@moi] la date [*]
 @ shortcut date
 
-+ nous sommes le [*]
++ @quel (jour|date) (sommes-nous|sommes nous|est-on|est on|nous sommes|on est)
 @ shortcut date
 
-+ @quel (jour|date) sommes[-]nous
++ (nous sommes|on est) @quel (jour|date)
 @ shortcut date

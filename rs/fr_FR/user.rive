@@ -17,7 +17,7 @@
 + je ne suis personne
 - <set name=undefined>Ok.
 
-+ oublie moi
++ oublie[s][-]moi
 - <set name=undefined>Ok.
 
 // Reponse generique pour la demande 'qui es tu ?' ////////////

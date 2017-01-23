@@ -24,8 +24,8 @@
 @ calculer <star1>
 */
 
-+ calculer *
++ calcule@premierGroupe *
 - <call>calc <star></call>
 
-+ (calcule|calcul|combien fait|combien font|donne le resultat de) *
++ (calcul|combien fait|combien font|donne le resultat de) *
 @ calculer <star2>

@@ -1,3 +1,6 @@
+// ********************** Topic ************************
+// Un topic est un mode de conversation fermé.
+// Comme dans tous les topics, une phrase avec le mot 'aide' dedans dira comment sortir
 > topic chut
     + *
     - .
@@ -7,6 +10,9 @@
 
     + tu peux (parler|reparler|sortir du silence)
     - merci {topic=random}
+
+    + [*] aide [*]
+    @ <bot name>
 
 
 < topic

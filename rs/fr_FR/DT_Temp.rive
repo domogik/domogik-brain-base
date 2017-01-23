@@ -17,4 +17,8 @@
 + @donneMoi la temperature [@cible] *
 @shortcut temperature <star1>
 
++ il fait combien [@cible] *
+@shortcut temperature <star1>
+
+
 

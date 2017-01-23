@@ -1,16 +1,18 @@
 // Changement de couleur
 // ##feature## contrôler des lumières de couleur
 
+! array mettre = met|mets|mettre|mettez
+
 + shortcut color command * dev * val *
 - <call>do_color_command fr_FR, <star1>, <star2>, <star3></call>
 
-+ (met|mets|mettre|allume|allumes|allumer) [@pronom] * en *
++ (@mettre|allume@premierGroupe) [@pronom] * en *
 @ shortcut color command DT_ColorRGBHexa dev <star2> val <star3>
 
-+ (met|mets|mettre|change|changes|changer|modifie|modifies|modifier) la couleur [@cible] * en *
++ (@mettre|change@premierGroupe|modifie@premierGroupe) la couleur [@cible] * en *
 @ shortcut color command DT_ColorRGBHexa dev <star2> val <star3>
 
-+ (met|mets|mettre|change|changes|changer|modifie|modifies|modifier) la couleur * [@cible] *
++ (@mettre|change@premierGroupe|modifie@premierGroupe) la couleur * [@cible] *
 @ shortcut color command DT_ColorRGBHexa dev <star3> val <star2>
 
 
