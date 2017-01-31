@@ -2,6 +2,11 @@
 Changelog
 =========
 
+1.6
+===
+
+* Really small improvment (but an important one for natural speaking) in can_you.rive (fr_FR).
+
 1.5
 ===
 
