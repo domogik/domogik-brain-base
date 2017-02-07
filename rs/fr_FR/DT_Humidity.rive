@@ -14,6 +14,12 @@
 + @donneMoi l humidite [@cible] *
 @shortcut humidity <star1>
 
+// pour usage avec @peuxTu
++ l humidite [@cible] *
+@shortcut humidity <star1>
+
+
+
 
 
 

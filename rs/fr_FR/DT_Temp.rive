@@ -11,8 +11,8 @@
 - La température est <call>get_sensor_value fr_FR, DT_Temp, degrés, <star></call> 
 
 // phrases
-+ combien [fait il|fait-il|il fait] [@cible] *
-@shortcut temperature <star>
++ (combien|quelle temperature) (fait il|fait-il|il fait) [@cible] *
+@shortcut temperature <star3>
 
 + @donneMoi la temperature [@cible] *
 @shortcut temperature <star1>
@@ -20,5 +20,8 @@
 + il fait combien [@cible] *
 @shortcut temperature <star1>
 
+// pour usage avec @peuxTu
++ la temperature [@cible] *
+@shortcut temperature <star1>
 
 

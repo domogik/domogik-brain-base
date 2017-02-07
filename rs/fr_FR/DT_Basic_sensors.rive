@@ -19,4 +19,9 @@
 + @donneMoi la valeur [@cible] *
 @shortcut basic <star1>
 
+// pour usage avec @peuxTu
++ la valeur [@cible] *
+@shortcut basic <star1>
+
+
 
