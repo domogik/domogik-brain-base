@@ -2,6 +2,11 @@
 Changelog
 =========
 
+1.7
+===
+
+* Small improvments, for natural speaking (fr_FR)
+
 1.6
 ===
 
