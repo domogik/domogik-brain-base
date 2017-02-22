@@ -1,7 +1,7 @@
 + shortcut humidity *
 - De vochtigheid in <star> is <call>get_sensor_value nl_BE, DT_Humidity, procent, <star></call>
 
-+ Wat is de vochtigheid voor *
++ wat is de vochtigheid voor *
 @shortcut humidity <star>
 
 
